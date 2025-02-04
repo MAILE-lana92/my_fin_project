@@ -15,7 +15,7 @@ my_fin_project:
       type: postgres
       host: localhost
       user: postgres
-      password: Minhvy123
+      password: Minhvy123!
       port: 5432
       dbname: postgres
       schema: analytics
