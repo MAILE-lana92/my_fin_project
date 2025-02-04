@@ -4,19 +4,19 @@ my_fin_project:
     dev:
       type: postgres
       host: localhost
-      user: postgres
+      user: postgres 
       password: Minhvy123!
       port: 5432
       dbname: postgres
-      schema: dbt_dev
+      schema: public
       threads: 4
 
     prod:  # additional prod target
       type: postgres
-      host: localhost
-      user: postgres
+      host: 1111.111.111.111
+      user: localhost
       password: Minhvy123!
       port: 5432
       dbname: postgres
-      schema: analytics
+      schema: public
       threads: 8
