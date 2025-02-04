@@ -1,0 +1,22 @@
+my_fin_project:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: Minhvy123!
+      port: 5432
+      dbname: postgres
+      schema: dbt_dev
+      threads: 4
+
+    prod:  # additional prod target
+      type: postgres
+      host: localhost
+      user: postgres
+      password: Minhvy123
+      port: 5432
+      dbname: postgres
+      schema: analytics
+      threads: 8
