@@ -22,6 +22,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+seeds:
+  my_fin_project:
+    base_transaction.csv:
+      materialized: table
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -32,11 +36,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
  my_fin_project:
    staging:
-     materialized: view
+     +schema: staging
+     +materialized: view
    intermediate:
-     materialized: incremental
+     +schema: intermediate
+     +materialized: incremental
    marts:
-     materialized: table
+     +schema: marts
+     +materialized: table
 
 vars:
   dbt_date: 
