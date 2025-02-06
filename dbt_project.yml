@@ -46,4 +46,44 @@ models:
      +materialized: table
 
 vars:
-  dbt_date: 
+  credit_rules:
+    rule_1:
+      category: Investment
+      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823"]
+    rule_2:
+      category: Cashout
+      keywords: ["RUT TIEN", "RUT TIEN"]
+    rule_3:
+      category: Online_shopping
+      keywords: ["SHOPEEPAY", "MOMO CASHIN"]
+    rule_4:
+      category: Pet
+      keywords: ["TIEN THUC AN MEO"]
+    rule_5:
+      category: Electric_bill
+      keywords: ["PE02000051037"]
+    rule_6:
+      category: Water_bill
+      keywords: ["TIEN NUOC", "PHUWACO"]
+    rule_7:
+      category: Phone_bill
+      keywords: ["TIEN DIEN THOAI"]
+    rule_8:
+      category: Internet_bill
+      keywords: ["T008_GFTTH_HUYPNQ8"]
+    rule_9:
+      category: Foods_n_drinks
+      keywords: ["THANH TOAN HANG HOA DICH VU"]
+    rule_10:
+      category: Healthcare
+      keywords: ["Y TE", "KHAM CHUA BENH"]
+    rule_11:
+      category: Finance_cost
+      keywords: ["THANH TOAN THE TIN DUNG", "THU PHI DINH KY TKTM"]
+    rule_12:
+      category: Education
+      keywords: ["COURSERA"]
+    rule_13:
+      category: House_improvement
+      keywords: ["LE VAN DUNG", "BUI THI TUOI", "CAO THI THU THUY"]
+  
