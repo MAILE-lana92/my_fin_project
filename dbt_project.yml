@@ -86,4 +86,19 @@ vars:
     rule_13:
       category: House_improvement
       keywords: ["LE VAN DUNG", "BUI THI TUOI", "CAO THI THU THUY"]
-  
+  debit_rules:
+    rule_1:
+      category: Salary
+      keywords: ["LUONG", " LE XUAN MAI", "SALARY"]
+    rule_2:
+      category: Parner_support
+      keywords: ["PHUNG NGUYEN QUOC HUY"]
+    rule_3:
+      category: Investment_Debit
+      keywords: ["000131823", "GHI CO LAI TIEN GUI", "TIET KIEM", "VEFO", "VIBF"]
+    rule_4:
+      category: Borrow
+      keywords: ["BUI THI TUOI", "LE VAN DUNG"]
+    rule_5:
+      category: Refund
+      keywords: ["HOAN", "THUE"]
