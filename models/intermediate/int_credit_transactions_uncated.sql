@@ -8,7 +8,6 @@ credit_trans as (
     ,trans."Code"
     ,trans."Desc"
     ,trans."Credit"
-    ,trans."Balance"
 from all_trans trans
     where trans."Credit" > 0
 )

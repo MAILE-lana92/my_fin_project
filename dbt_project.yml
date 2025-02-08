@@ -91,8 +91,8 @@ vars:
       category: Salary
       keywords: ["LUONG", " LE XUAN MAI", "SALARY"]
     rule_2:
-      category: Parner_support
-      keywords: ["PHUNG NGUYEN QUOC HUY"]
+      category: Partner_support
+      keywords: ["PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY"]
     rule_3:
       category: Investment_Debit
       keywords: ["000131823", "GHI CO LAI TIEN GUI", "TIET KIEM", "VEFO", "VIBF"]

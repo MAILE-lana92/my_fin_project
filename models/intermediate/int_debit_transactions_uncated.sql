@@ -8,7 +8,6 @@ debit_trans as (
     ,trans."Code"
     ,trans."Desc"
     ,trans."Debit"
-    ,trans."Balance"
 from all_trans trans
     where trans."Debit" > 0
 )
