@@ -23,7 +23,19 @@ debit_invest as (
     ,{{ investment_categorize('debit."Desc"') }} as "investment_category"
     from {{ ref('int_debit_transactions_cated') }} debit 
     where "debit_transaction_type" = 'Investment'
-)
+),
+cte as (
 select * from credit_invest
 union all
 select * from debit_invest
+)
+select 
+ROW_NUMBER() OVER (ORDER by cte."Date", cte."id") as id
+,cte."Date"
+,cte."Code"
+,cte."Desc"
+,cte."trans_type"
+,cte."amount"
+,cte."transaction_type"
+,cte."investment_category"
+from cte
