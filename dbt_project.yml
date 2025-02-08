@@ -49,7 +49,7 @@ vars:
   credit_rules:
     rule_1:
       category: Investment
-      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823"]
+      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "VEFON003108348"]
     rule_2:
       category: Cashout
       keywords: ["RUT TIEN", "RUT TIEN"]
@@ -94,11 +94,24 @@ vars:
       category: Partner_support
       keywords: ["PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY"]
     rule_3:
-      category: Investment_Debit
-      keywords: ["000131823", "GHI CO LAI TIEN GUI", "TIET KIEM", "VEFO", "VIBF"]
+      category: Investment
+      keywords: ["000131823", "GHI CO LAI TIEN GUI", "TIET KIEM", "VEFO", "VIBF","VEFON003108348"]
     rule_4:
       category: Borrow
       keywords: ["BUI THI TUOI", "LE VAN DUNG"]
     rule_5:
       category: Refund
       keywords: ["HOAN", "THUE"]
+  investment_rules:
+    rule_1:
+      category: Bank_book
+      keywords: ["SO TIET KIEM", "LAI TIEN GUI", "STK"]
+    rule_2:
+      category: Funding
+      keywords: ["VEFO", "VIBF", "VEFON003108348"]
+    rule_3:
+      category: Stock
+      keywords: ["NTTK 0001213823"]
+    rule_4:
+      category: Gold
+      keywords: ["SJC"]

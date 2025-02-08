@@ -6,7 +6,7 @@
       , trans."Code"
       , trans."Desc"
       , trans."Debit"
-      ,{{ debit_categorize(column_name) }} AS debit_transaction_type
+      ,{{ debit_categorize(column_name) }} AS Debit_Transaction_Type
       FROM {{ ref('int_debit_transactions_uncated') }} trans
   )
   SELECT * FROM uncated_debit_trans
