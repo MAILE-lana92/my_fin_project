@@ -44,6 +44,8 @@ models:
    marts:
      +schema: marts
      +materialized: table
+   ingest_excel_data:
+     +table_name: 'test'
 
 vars:
   credit_rules:
@@ -70,7 +72,7 @@ vars:
       keywords: ["TIEN DIEN THOAI"]
     rule_8:
       category: Internet_bill
-      keywords: ["T008_GFTTH_HUYPNQ8"]
+      keywords: ["T008_GFTTH_HUYPNQ8", "T008_GFTTH_HUYPNG"]
     rule_9:
       category: Foods_n_drinks
       keywords: ["THANH TOAN HANG HOA DICH VU"]
