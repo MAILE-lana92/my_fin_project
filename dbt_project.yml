@@ -97,10 +97,10 @@ vars:
       keywords: ["LUONG", " LE XUAN MAI", "SALARY"]
     rule_2:
       category: Partner_support
-      keywords: ["PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY"]
+      keywords: ["PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY", "HUY PHUNG", "ANH HUY", "DOTA", "ANH EM NUONG TUA"]
     rule_3:
       category: Investment
-      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823"] 
+      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823", "RUT VON", "TAT TOAN"] 
     rule_4:
       category: Borrow
       keywords: ["BUI THI TUOI", "LE VAN DUNG"]
@@ -113,7 +113,7 @@ vars:
   investment_rules:
     rule_1:
       category: Bank_book
-      keywords: ["SO TIET KIEM", "STK"]
+      keywords: ["SO TIET KIEM", "STK", "RUT VON", "TAT TOAN"]
     rule_2:
       category: Funding
       keywords: ["VEFO", "VIBF"]
