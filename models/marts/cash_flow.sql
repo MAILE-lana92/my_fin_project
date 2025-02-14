@@ -19,7 +19,7 @@ investment as (
     from {{ ref('investment')}} investment
     group by trans_date
 ),
-cte as (
+cte1 as (
     select  case when income.trans_date is not null then income.trans_date
     	else 
     	case when spending.trans_date is not null then spending.trans_date
@@ -34,8 +34,13 @@ cte as (
     on income.trans_date = spending.trans_date
     full outer join investment
     on income.trans_date = investment.trans_date
+),
+cte as (
+select 
+cte1.*
+,cte1.income_amount - cte1.spending_amount - cte1.investment_amount as net_income
+from cte1
 )
 select ROW_NUMBER() OVER (ORDER by trans_date) as id
 ,cte.*
 from cte
-    

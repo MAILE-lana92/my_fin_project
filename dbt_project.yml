@@ -51,7 +51,7 @@ vars:
   credit_rules:
     rule_1:
       category: Investment
-      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823"]
+      keywords: ["SO TIET KIEM","KDV","VNDIRECT", "VEOFN003",VIB FN003", "VIBFN003" , "TIEN GUI", "STK", "VEOF", "VEFO", "VIBF", "NTTK", "SJC", "000131823", "SO TICH LUY", " CO KY HAN"]
     rule_2:
       category: Cashout
       keywords: ["RUT TIEN", "RUT TIEN"]
@@ -60,7 +60,7 @@ vars:
       keywords: ["SHOPEEPAY", "MOMO CASHIN"]
     rule_4:
       category: Pet
-      keywords: ["TIEN THUC AN MEO"]
+      keywords: ["THUC AN"]
     rule_5:
       category: Electric_bill
       keywords: ["PE02000051037"]
@@ -87,39 +87,46 @@ vars:
       keywords: ["COURSERA"]
     rule_13:
       category: House_improvement
-      keywords: ["LE VAN DUNG", "BUI THI TUOI", "CAO THI THU THUY"]
+      keywords: ["LE VAN DUNG", "BUI THI TUOI", "CAO THI THU THUY", "CMND 083196009809"]
     rule_14:
       category: Wedding_spending
       keywords: ["WEDDING", "DAM CUOI"]
+    rule_15:
+      category: Lending
+      keywords: ["ANH VU", 'HOAI THUONG']
   debit_rules:
     rule_1:
       category: Salary
-      keywords: ["LUONG", " LE XUAN MAI", "SALARY"]
+      keywords: ["LUONG", "LE XUAN MAI", "SALARY"]
     rule_2:
       category: Partner_support
-      keywords: ["PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY", "HUY PHUNG", "ANH HUY", "DOTA", "ANH EM NUONG TUA"]
+      keywords: ["YEU EM","ANH DANG PREPARE", "TIEN GUI TIET KIEM CUA ANH YEU","ANH YEU","MUA DO HOI NHIEU CHO XIN 500K", "HIY PHUNG", "VO YEU", "YEU VO LAM,TRUA CO AN GI KO A","GUI EM","CON AI YEU EM BANG ANH", "TIEN TIET KIEM", "TIEN TIET KIEM ANH KUTO", "ANH CHONG CU TO", "HUY NGU NGOK", "TIEN NE KHO QUA. CHONG", "TIEN THUONG", "TIEN MUNG TUOI CHO VO", "DEM QUA ANH VUI LAM", "PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY", "HUY PHUNG", "ANH HUY", "DOTA", "ANH EM NUONG TUA"]
     rule_3:
       category: Investment
-      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823", "RUT VON", "TAT TOAN"] 
+      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823", "RUT VON", "TAT TOAN", "VNDIRECT", "KDV", "VINACAPITAL", "VEOF", "NTTK"] 
     rule_4:
       category: Borrow
       keywords: ["BUI THI TUOI", "LE VAN DUNG"]
     rule_5:
       category: Refund
-      keywords: ["HOAN", "THUE"]
+      keywords: ["HOAN", "THUE", "THANH TOAN HANG HOA DICH VU", "MOMO CASHOUT", "CHUYEN TIEN DEN LE XUAN MAI"]
     rule_6:
       category: Investment_interest
       keywords: ["LAI TIEN GUI"]
+    rule_7:
+      category: Cashing_in
+      keywords: ["LE XUAN MAI NOP"] 
   investment_rules:
     rule_1:
       category: Bank_book
-      keywords: ["SO TIET KIEM", "STK", "RUT VON", "TAT TOAN"]
+      keywords: ["SO TIET KIEM","TIEN GUI", "SO TICH LUY", "STK", "RUT VON", "TAT TOAN", "CO KY HAN"]
     rule_2:
       category: Funding
-      keywords: ["VEFO", "VIBF"]
+      keywords: ["VEFO", "VIBF", "VINACAPITAL", "VEOF", "VEOFN003", "VIBFN003", "VIB FN003"]
     rule_3:
       category: Stock
-      keywords: ["NTTK 0001213823", "000131823"]
+      keywords: ["NTTK 0001213823", "000131823", "NTTK"]
     rule_4:
       category: Gold
-      keywords: ["SJC"]
+      keywords: ["SJC", "KDV"]
+    

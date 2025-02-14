@@ -2,7 +2,7 @@
 with source as (
     select 
     trans. "No" as id
-    ,trans."Date" as trans_date
+    ,cast(trans."Date" as date) as trans_date
     ,trans."Code" as code
     ,trans."Desc" as trans_desc
     ,cast(trans."Credit" as int) as credit

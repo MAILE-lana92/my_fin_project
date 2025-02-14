@@ -10,7 +10,7 @@
                     ]::text[]
                 ) THEN '{{ rule.category }}'
             {% endfor %}
-            ELSE 'Other'
+            ELSE 'Returned Money'
         END
 
 {% endmacro %}

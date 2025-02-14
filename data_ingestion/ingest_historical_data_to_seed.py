@@ -27,7 +27,7 @@ def concat_df(file_path, save_path):
         
 def clean_df(df_concat):
     # dedup dataframe
-    df_dedup = df_concat.drop_duplicates(subset= header, keep= 'first') 
+    df_dedup = df_concat.drop_duplicates(subset= ['Date','Code','Desc', 'Credit', 'Credit'], keep= 'first') 
     # remove records with invalid value                                                                                                                                                                                               
     df = df_dedup[df_dedup['Balance'].notnull()]
     df = df[df['Date'] != 'Ngày/Date'] 
@@ -37,11 +37,13 @@ def clean_df(df_concat):
     # with value NaN in row n, replace by value in row n - 1
     df['No'] = df['No'].ffill() + df['No'].isnull().astype(int)
     # convert Date column to correct date format
+    # df['Date'] = df['Date'].astype('datetime64[ns]').dt.strftime('%Y-%m-%d')
+    df['Date'] = df['Date'].astype('datetime64[ns]').dt.strftime('%d-%m-%Y')
     df['Date'] = df['Date'].astype('datetime64[ns]').dt.strftime('%Y-%m-%d')
     # remove invalue characters in convert Credit, Debit. Balance columns into int
-    df['Credit'] = df['Credit'].astype(str).str.replace(r'[^0-9]', '', regex= True).astype(int)
-    df['Debit'] = df['Debit'].astype(str).str.replace(r'[^0-9]', '', regex= True).astype(int)
-    df['Balance'] = df['Balance'].astype(str).str.replace(r'[^0-9]', '', regex= True).astype(int)
+    df['Credit'] = df['Credit'].astype(str).str.replace(r'[^0-9]', '', regex=True).apply(lambda x: int(x) if x.isdigit() else 0)
+    df['Debit'] = df['Debit'].astype(str).str.replace(r'[^0-9]', '', regex=True).apply(lambda x: int(x) if x.isdigit() else 0)
+    df['Balance'] = df['Balance'].astype(str).str.replace(r'[^0-9]', '', regex=True).apply(lambda x: int(x) if x.isdigit() else 0)
     # replace Enter pattern with ' '
     df['Desc'] = df['Desc'].replace('\n', ' ', regex= True)
     return df
