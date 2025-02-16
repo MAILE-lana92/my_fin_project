@@ -1,5 +1,8 @@
 Welcome to your new dbt project!
 
+### Important notice
+The data has been modified: trends and insights remain accurate, but the number of transactions has been scaled by a factor of n. The actual transaction amounts are for my reference only. Please refrain from drawing conclusions about the transaction count.
+
 ### Using the starter project
 
 Try running the following commands:
