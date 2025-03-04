@@ -103,7 +103,7 @@ vars:
       keywords: ["YEU EM","ANH DANG PREPARE", "TIEN GUI TIET KIEM CUA ANH YEU","ANH YEU","MUA DO HOI NHIEU CHO XIN 500K", "HIY PHUNG", "VO YEU", "YEU VO LAM,TRUA CO AN GI KO A","GUI EM","CON AI YEU EM BANG ANH", "TIEN TIET KIEM", "TIEN TIET KIEM ANH KUTO", "ANH CHONG CU TO", "HUY NGU NGOK", "TIEN NE KHO QUA. CHONG", "TIEN THUONG", "TIEN MUNG TUOI CHO VO", "DEM QUA ANH VUI LAM", "PHUNG NGUYEN QUOC HUY", "TIET KIEM HUY", "HUY PHUNG", "ANH HUY", "DOTA", "ANH EM NUONG TUA"]
     rule_3:
       category: Investment
-      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823", "RUT VON", "TAT TOAN", "VNDIRECT", "KDV", "VINACAPITAL", "VEOF", "NTTK"] 
+      keywords: ["SO TIET KIEM","STK", "VEFO", "VIBF", "NTTK 0001213823", "SJC", "000131823", "RUT VON", "TAT TOAN", "VNDIRECT", "KDV", "VINACAPITAL", "VEOF", "NTTK", "VNDIRECT"] 
     rule_4:
       category: Borrow
       keywords: ["BUI THI TUOI", "LE VAN DUNG"]
@@ -125,7 +125,7 @@ vars:
       keywords: ["VEFO", "VIBF", "VINACAPITAL", "VEOF", "VEOFN003", "VIBFN003", "VIB FN003"]
     rule_3:
       category: Stock
-      keywords: ["NTTK 0001213823", "000131823", "NTTK"]
+      keywords: ["NTTK 0001213823", "000131823", "NTTK", "VNDIRECT"]
     rule_4:
       category: Gold
       keywords: ["SJC", "KDV"]
