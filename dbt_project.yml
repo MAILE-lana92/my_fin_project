@@ -72,7 +72,7 @@ vars:
       keywords: ["TIEN DIEN THOAI"]
     rule_8:
       category: Internet_bill
-      keywords: ["T008_GFTTH_HUYPNQ8", "T008_GFTTH_HUYPNG"]
+      keywords: ["T008_GFTTH"]
     rule_9:
       category: Foods_n_drinks
       keywords: ["THANH TOAN HANG HOA DICH VU"]
@@ -84,7 +84,7 @@ vars:
       keywords: ["THANH TOAN THE TIN DUNG", "THU PHI DINH KY TKTM"]
     rule_12:
       category: Education
-      keywords: ["COURSERA"]
+      keywords: ["COURSERA", "TIEN HOC PHI"]
     rule_13:
       category: House_improvement
       keywords: ["LE VAN DUNG", "BUI THI TUOI", "CAO THI THU THUY", "CMND 083196009809"]
