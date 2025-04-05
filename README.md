@@ -9,6 +9,7 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+Insight summary: https://brieflog.com/memo/255
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
