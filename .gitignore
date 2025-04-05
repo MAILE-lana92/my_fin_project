@@ -1,4 +1,6 @@
-
+.dbtenv/
+.vscode/
+.dbt
 target/
 dbt_packages/
 logs/
